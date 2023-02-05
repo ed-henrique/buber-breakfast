@@ -30,3 +30,4 @@
 /home/p1zza/Documents/github/buber-breakfast/BuberBreakfast/obj/Debug/net7.0/BuberBreakfast.pdb
 /home/p1zza/Documents/github/buber-breakfast/BuberBreakfast/obj/Debug/net7.0/BuberBreakfast.genruntimeconfig.cache
 /home/p1zza/Documents/github/buber-breakfast/BuberBreakfast/obj/Debug/net7.0/ref/BuberBreakfast.dll
+/home/p1zza/Documents/github/buber-breakfast/BuberBreakfast/bin/Debug/net7.0/ErrorOr.dll
