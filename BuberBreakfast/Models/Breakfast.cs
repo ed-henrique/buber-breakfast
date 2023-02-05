@@ -1,5 +1,6 @@
 using ErrorOr;
 using BuberBreakfast.ServiceErrors;
+using BuberBreakfast.Contract.Breakfast;
 
 namespace BuberBreakfast.Models;
 
@@ -61,7 +62,8 @@ public class Breakfast
             errors.Add(Errors.Breakfast.InvalidDescription);
         }
 
-        if (errors.Count > 0) {
+        if (errors.Count > 0)
+        {
             return errors;
         }
 
@@ -75,5 +77,28 @@ public class Breakfast
             savory,
             sweet
         );
+    }
+
+    public static ErrorOr<Breakfast> From(CreateBreakfastRequest request)
+    {
+        return Create(
+            request.Name,
+            request.Description,
+            request.StartDateTime,
+            request.EndDateTime,
+            request.Savory,
+            request.Sweet);
+    }
+
+    public static ErrorOr<Breakfast> From(Guid id, UpsertBreakfastRequest request)
+    {
+        return Create(
+            request.Name,
+            request.Description,
+            request.StartDateTime,
+            request.EndDateTime,
+            request.Savory,
+            request.Sweet,
+            id);
     }
 }

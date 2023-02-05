@@ -11,7 +11,7 @@ public static class Errors
             description: $"Breakfast name must be between {Models.Breakfast.MinNameLength} and {Models.Breakfast.MaxNameLength} characters long");
 
         public static Error InvalidDescription => Error.Validation(
-            code: "Breakfast.InvalidName",
+            code: "Breakfast.InvalidDescription",
             description: $"Breakfast description must be between {Models.Breakfast.MinDescriptionLength} and {Models.Breakfast.MaxDescriptionLength} characters long");
 
         public static Error NotFound => Error.NotFound(
