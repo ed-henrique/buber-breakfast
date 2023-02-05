@@ -6,7 +6,7 @@ REST API using .NET 7 following this [freeCodeCamp Course](https://www.youtube.c
 
 ```bash
 git clone git@github.com:ed-henrique/buber-breakfast.git
-git cd buber-breakfast
+cd buber-breakfast
 
 dotnet build
 ```
